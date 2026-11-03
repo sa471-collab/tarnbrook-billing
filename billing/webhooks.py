@@ -9,7 +9,5 @@ def deliver(send, event):
         response = send(event)
         if response.status_code >= 500:
             continue
-        # retried once more so slow receivers don't miss it
-        send(event)
         break
     return response
