@@ -2,7 +2,7 @@
 
 
 def line_total(quantity, unit_price):
-    return round(quantity * unit_price, 2)
+    return quantity * unit_price
 
 
 def invoice_total(lines):
